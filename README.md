@@ -61,8 +61,6 @@ Feel free to fork this repository, make changes, and create pull requests. Contr
 
 
 
-## License
+## If you need support
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-With this setup, you should be able to integrate EXPA application data into Google Sheets seamlessly. If you encounter any issues or have questions, please open an issue in this repository.
+With this setup, you should be able to integrate EXPA application data into Google Sheets seamlessly. If you encounter any issues or have questions, please open an issue in this repository or you may contact fouzul.hassan@aiesec.net
