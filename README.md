@@ -26,7 +26,7 @@ Follow these steps to set up and run the scripts:
 
 ### Step 4: Obtain and Set the Access Token
 
-1. Obtain an access token from EXPA. You may refer to [this link](https://google.com) for more details on how to obtain the token.
+1. Obtain an access token from EXPA. You may refer to [this link](https://click.aiesec.lk/mc/access-token-101) for more details on how to obtain the token.
 2. Replace the placeholder with your actual access token in line 6 of both `iCX.gs` and `oGX.gs` files:
     ```javascript
     var accessToken = 'YOUR_ACCESS_TOKEN'; // Your access token
@@ -51,9 +51,15 @@ To fetch data for all LCs in one file and distribute it:
 1. Use the `IMPORTANGE` and `QUERY` functions in Google Sheets.
 2. This will allow you to import specific data for each LC into different sheets.
 
+## More Details on AIESEC Developer Guides
+1. [AIESEC International](https://click.aiesec.lk/mc/aiesec-dev-guides)
+2. [AIESEC in Sri lanka]
+
 ## Contributing
 
 Feel free to fork this repository, make changes, and create pull requests. Contributions are welcome!
+
+
 
 ## License
 
