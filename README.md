@@ -1,32 +1,62 @@
-# expa-applications-data
-Realtime method to fetch application data from EXPA (GIS) to Google Sheets utilizing the Google AppScript.
+# EXPA Applications Data Integration to Google Sheets
 
-Intial Setup
+This repository contains scripts to fetch real-time application data from EXPA (GIS) to Google Sheets using Google Apps Script.
 
-1. Open your sheet and open the appscript and create iCX.gs and oGX.gs files.
+## Initial Setup
 
-2. Paste the code from iCX.gs and oGX.gs in the repo
+Follow these steps to set up and run the scripts:
 
-3. You may change the start date based on your preference in the line 3 of both files iCX and oGX
-```
-var startDate = "01/07/2023" 
-```
+### Step 1: Open your Google Sheet and Access AppScript
 
+1. Open your Google Sheet.
+2. Navigate to `Extensions` -> `Apps Script`.
+3. Create two new script files: `iCX.gs` and `oGX.gs`.
 
-4. Initially you need to have an access token from expa. You may refer the link here (google.com)
-Then you have to replace the tokens in the iCX.gs and oGX.gs line 6
-```
-var accessToken = 'YOUR_ACCESS_TOKEN'; // Your access token
-```
+### Step 2: Paste the Code
 
-Add trigger to make it realtime
+1. Copy the code from the `iCX.gs` file in this repository and paste it into the `iCX.gs` file in your Apps Script editor.
+2. Copy the code from the `oGX.gs` file in this repository and paste it into the `oGX.gs` file in your Apps Script editor.
 
-1. Create a trigger for the iCXExract() in the iCX.gs and oGXExtract() in the oGX.gs file.
+### Step 3: Configure the Start Date
 
-2. You may choose the function as it is mention above
+1. You can set your preferred start date for data extraction. Edit line 3 in both `iCX.gs` and `oGX.gs` files:
+    ```javascript
+    var startDate = "01/07/2023"; // Set your preferred start date
+    ```
 
-3. event source should be Time-driven and you may choose the other two options based on your preferences. In our cases we are running every hour.
+### Step 4: Obtain and Set the Access Token
 
-For MCs Only
+1. Obtain an access token from EXPA. You may refer to [this link](https://google.com) for more details on how to obtain the token.
+2. Replace the placeholder with your actual access token in line 6 of both `iCX.gs` and `oGX.gs` files:
+    ```javascript
+    var accessToken = 'YOUR_ACCESS_TOKEN'; // Your access token
+    ```
 
-For MCs you can fetch all the LCs in one file and then using IMPORTANGE and QUERY functions you can specifically import the data for each LCs in a different sheet.
+## Adding a Trigger for Real-time Data Fetching
+
+To ensure the data is fetched in real-time, set up triggers for the functions:
+
+1. Open the Apps Script editor.
+2. Click on the clock icon to open the triggers page.
+3. Add a new trigger:
+    - For `iCX.gs`, set the function to `iCXExtract`.
+    - For `oGX.gs`, set the function to `oGXExtract`.
+4. Set the event source to `Time-driven`.
+5. Choose the frequency and interval (e.g., every hour).
+
+## For MCs Only
+
+To fetch data for all LCs in one file and distribute it:
+
+1. Use the `IMPORTANGE` and `QUERY` functions in Google Sheets.
+2. This will allow you to import specific data for each LC into different sheets.
+
+## Contributing
+
+Feel free to fork this repository, make changes, and create pull requests. Contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+With this setup, you should be able to integrate EXPA application data into Google Sheets seamlessly. If you encounter any issues or have questions, please open an issue in this repository.
