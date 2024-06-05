@@ -59,6 +59,8 @@ To fetch data for all LCs in one file and distribute it:
 
 Feel free to fork this repository, make changes, and create pull requests. Contributions are welcome!
 
+Furthermore, It would be great if you could star our repository and encourgae our intiatives
+
 
 
 ## If you need support
