@@ -1,4 +1,4 @@
-# EXPA Applications Data Integration to Google Sheets
+# Extract EXPA Applications Data to Google Sheets using EXPA API
 
 This repository contains scripts to fetch real-time application data from EXPA (GIS) to Google Sheets using Google Apps Script.
 
